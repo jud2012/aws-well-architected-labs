@@ -6,7 +6,7 @@ weight: 1
 pre: "<b>1. </b>"
 ---
  
-# Compute 
+# Compute AAA
  
 ### Modernize with newest instance type
 
