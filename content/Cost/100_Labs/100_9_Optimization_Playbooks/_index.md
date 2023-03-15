@@ -1,18 +1,19 @@
 ---
 title: "Level 100: Optimization Playbooks"
-#menutitle: "Level 100: Optimization Playbooks"
-date: 2022-02-01T11:16:08-04:00
+menutitle: "Level 100: Optimization Playbooks"
+date: 2021-05-04T26:16:08-04:00
 chapter: false
 weight: 9
-hidden: True
-
+hidden: false
 ---
+
 ## Last Updated
 Feb 2023
 
 ## Authors
 
 - Stephanie Gooch, Commercial Architect (AWS)
+- Judith Lehner, Technical Account Manager (AWS)
 
 ## Feedback
 If you wish to provide feedback on this lab, there is an error, or you want to make a suggestion, please email: costoptimization@amazon.com
