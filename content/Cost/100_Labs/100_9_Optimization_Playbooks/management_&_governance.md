@@ -7,7 +7,7 @@ pre: "<b>1. </b>"
 ---
  
 
-## 1. CloudWatch
+## 1. Amazon CloudWatch
 
 ### General Spend Overview- Identifying CloudWatch spend
 
@@ -26,11 +26,6 @@ Metrics are data about the performance of your systems. By default, many service
 
 Metric data is kept for 15 months, enabling you to view both up-to-the-minute data and historical data.
 
-#### How to identify on Cost Explorer:
-
-* On Cost Explorer, Group by **Instance Type** and Filter by Service -> **RDS** and Instance Type -> **No Instance Type**
-![Images/cff_rds2.png](/Cost/CFF_RDS/Images/cff_rds2.png?classes=lab_picture_small)
-
 #### Best Practices:
 * Metrics pricing is regional
 * Cost changes depending by the num metrics/month and the API call requested
@@ -40,8 +35,8 @@ Metric data is kept for 15 months, enabling you to view both up-to-the-minute da
     * aws cloudwatch list-metrics —namespace 'AWS/SNS' —recently-active PT3H
 
 * How to identify Custom Metrics on CW console-
-	* **PutMetricData** calls for a custom metric- look if you have this kind of Usage Type
-    * On Cloudwatch console → All metrics → here you can see two namespaces custom namespaces and aws namespaces, go to custom namespaces and see how many metrics you have per namespace. Identigu with metrics are being used per specific name space and verify they are needed
+	* **PutMetricData** calls for a custom metric- look if you have this kind of API operation
+    * On Cloudwatch console → All metrics → here you can see two namespaces **custom namespaces** and **aws namespaces**, go to custom namespaces and see how many metrics you have per namespace. Identify which metrics are being used per specific namespace and verify if they are needed
 * EC2 detailed Monitoring
     * To reduce costs, turn off detailed monitoring of instances, Auto Scaling group launch configurations, or API gateways, as appropriate
     * Use the EC2 describe-instances API to identify the instances using Detailed Monitoring.
@@ -61,7 +56,7 @@ CloudWatch Logs enables you to centralize the logs from all of your systems, app
 ![Images/cff_cw_query.png](/Cost/CFF_CloudWatch/Images/cff_cw_query.png?classes=lab_picture_small)
 
    * CloudWatch Logs Metrics
-      * IncomingBytes metric shows how much data is being ingested in CloudWatch log groups in near-real time
+      * **IncomingBytes** metric shows how much data is being ingested in CloudWatch log groups in near-real time
 * Optimizing log charges
 
     * Log retention- export to S3 based on retention policy
